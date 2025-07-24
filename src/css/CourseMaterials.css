@@ -92,3 +92,39 @@
     margin-left: 0;
   }
 }
+@media (min-width: 600px) and (max-width: 1400px) {
+  .course-materials-wrapper {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .course-materials-wrapper h2 {
+    font-size: 22px;
+    text-align: left;
+  }
+
+  .materials-container {
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .material-card {
+    flex: 1 1 45%;
+    padding: 18px 22px;
+    min-width: 260px;
+  }
+
+  .material-row {
+    font-size: 14.5px;
+    padding: 10px 12px;
+  }
+
+  .material-row .icon {
+    font-size: 17px;
+    margin-right: 8px;
+  }
+
+  .material-row strong {
+    font-size: 14px;
+  }
+}

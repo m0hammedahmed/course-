@@ -1,0 +1,128 @@
+.course-wrapperr {
+  padding: 25px !important;
+  border: 1px solid #eee !important;
+  border-radius: 8px !important;
+  background: #fff !important;
+  width: 100% !important;
+  margin-bottom: 30px !important;
+}
+
+.course-title {
+  width: 100% !important;
+  font-size: 24px !important;
+  font-weight: bold !important;
+  margin-bottom: 10px !important;
+}
+
+.course-description {
+  width: 100% !important;
+  color: #444 !important;
+  font-size: 15px !important;
+  margin-bottom: 10px !important;
+}
+
+.course-divider {
+  margin: 15px 0 !important;
+  border: 1px solid #eee !important;
+}
+
+.course-columns {
+  display: flex !important;
+  justify-content: space-between !important;
+  gap: 20px !important;
+  flex-wrap: wrap !important;
+}
+
+.course-column {
+  flex: 0 0 48% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 15px !important;
+}
+
+.course-lesson {
+  padding: 12px !important;
+  background: #f9f9f9 !important;
+  border: 1px solid #ddd !important;
+  border-radius: 6px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  transition: background 0.2s ease-in-out !important;
+}
+
+.course-lesson:hover {
+  background-color: #eee !important;
+}
+
+.lesson-content {
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  flex-wrap: wrap !important;
+}
+
+.lesson-icon {
+  color: #4c6ef5 !important;
+}
+
+.lesson-title {
+  font-weight: 500 !important;
+}
+
+.lesson-badge {
+  font-size: 11px !important;
+  padding: 3px 8px !important;
+  border-radius: 12px !important;
+}
+
+.green-badge {
+  background-color: #d4edda !important;
+  color: #155724 !important;
+}
+
+.red-badge {
+  background-color: #f8d7da !important;
+  color: #721c24 !important;
+}
+
+.lesson-lock-icon {
+  color: #999 !important;
+  font-size: 14px !important;
+}
+
+.clickable-lesson {
+  cursor: pointer !important;
+}
+
+.quiz-overlay {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: rgba(0, 0, 0, 0.6) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.quiz-box {
+  background: white !important;
+  padding: 30px !important;
+  border-radius: 8px !important;
+  position: relative !important;
+  width: 90% !important;
+  max-width: 600px !important;
+}
+
+.quiz-close-btn {
+  position: absolute !important;
+  top: 10px !important;
+  right: 10px !important;
+  background: none !important;
+  border: none !important;
+  font-size: 20px !important;
+  cursor: pointer !important;
+}

@@ -124,3 +124,46 @@ h2 {
     font-size: 0.95rem;
   }
 }
+@media (min-width: 600px) and (max-width: 1400px) {
+  .comments-container {
+    padding: 1.5rem;
+    max-width: 95%;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .comment {
+    gap: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+
+  .avatar {
+    width: 55px;
+    height: 55px;
+  }
+
+  .comment-body h4 {
+    font-size: 1rem;
+  }
+
+  .comment-body p {
+    font-size: 0.95rem;
+  }
+
+  .date {
+    font-size: 0.85rem;
+  }
+
+  .comment-form textarea {
+    font-size: 0.95rem;
+    padding: 0.9rem;
+  }
+
+  .comment-form button {
+    padding: 0.65rem 1.3rem;
+    font-size: 0.95rem;
+  }
+}
