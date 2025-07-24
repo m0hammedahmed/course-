@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../css/CourseWeek.css";
 import { FaLock, FaFileAlt } from "react-icons/fa";
-import QuizQuestion from "./QuizQuestion"; // تأكد إن الملف موجود بنفس الاسم
+import QuizQuestion from "./QuizQuestion";
 
 export default function CourseWeek({ weekNumber, questions, duration, className }) {
   const [showQuiz, setShowQuiz] = useState(false);
@@ -24,7 +24,11 @@ export default function CourseWeek({ weekNumber, questions, duration, className 
   ];
 
   const handleLessonClick = (lesson) => {
-    if (!lesson.locked && lesson.title === "Course Quiz") {
+    if (
+      !lesson.locked &&
+      lesson.title === "Course Quiz" &&
+      lesson.questions > 0
+    ) {
       setShowQuiz(true);
     }
   };
@@ -41,7 +45,13 @@ export default function CourseWeek({ weekNumber, questions, duration, className 
       {lessons.map((lesson, index) => (
         <div
           key={index}
-          className={`lesson-row ${!lesson.locked && lesson.title === "Course Quiz" ? "clickable" : ""}`}
+          className={`lesson-row ${
+            !lesson.locked &&
+            lesson.title === "Course Quiz" &&
+            lesson.questions > 0
+              ? "clickable"
+              : ""
+          }`}
           onClick={() => handleLessonClick(lesson)}
         >
           <div className="lesson-info">
