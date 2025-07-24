@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  margin-top: -34px;
+  width: 100%;
+  max-width: 1500px;
+  background: #fff;
+}
+
+.fir {
+  width: 60%;
+  padding: 20px;
+}
+
+.sec {
+  width: 40%;
+  padding: 20px;
+}
+
+/* ✅ Responsive for tablets and phones */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .fir,
+  .sec {
+    width: 100%;
+    padding: 10px 0;
+  }
+}

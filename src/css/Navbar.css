@@ -1,0 +1,56 @@
+/* Base style for navbar */
+.navbar {
+  width: 100%;
+  padding: 20px;
+  background-color: #f8f8f8;
+  display: flex;
+  
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Top nav links */
+.nav-top {
+  width: 100%;
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  list-style: none;
+}
+
+.nav-list li {
+  color: rgb(46, 45, 45);
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-list li.active {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Separator between nav items */
+.separator {
+  color: #2d2c2c;
+  font-size: 30px;
+  font-weight: 600;
+    padding: 0;
+
+}
+
+/* Title below nav */
+.nav-title {
+  color: #101010;
+  font-size: 40px;
+  font-weight: 400;
+  margin-left: 15px;
+}

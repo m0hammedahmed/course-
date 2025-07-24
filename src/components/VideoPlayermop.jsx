@@ -1,0 +1,77 @@
+import React from "react";
+import { FaBookOpen, FaFilePdf } from "react-icons/fa";
+import { AiOutlineVideoCamera, AiOutlineFileDone } from "react-icons/ai";
+import { FiAward } from "react-icons/fi";
+import "../css/VideoPlayermop.css";
+import ProgressBarmob from "./ProgressBarmob"; // أنت مسؤول عن تنفيذه
+
+export default function VideoPlayermop() {
+  return (
+    <div className="course-wrapper">
+      {/* Breadcrumb + Title */}
+      <div className="breadcrumb">
+        <span>Home &gt; Courses &gt;</span> <strong>Course Details</strong>
+      </div>
+
+      <h2 className="course-title">Starting SEO as your Home Based Business</h2>
+
+      {/* Video */}
+      <div className="video-playerr">
+        <video controls>
+          <source src="video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      {/* Educational Icons */}
+      <div className="icons-container">
+        <button className="icon-button" title="Book">
+          <FaBookOpen size={30} color="#4A90E2" />
+        </button>
+        <button className="icon-button" title="Video Lesson">
+          <AiOutlineVideoCamera size={30} color="#E67E22" />
+        </button>
+        <button className="icon-button" title="PDF Resource">
+          <FaFilePdf size={30} color="#D32F2F" />
+        </button>
+        <button className="icon-button" title="Quiz">
+          <AiOutlineFileDone size={30} color="#27AE60" />
+        </button>
+        <button className="icon-button" title="Certificate">
+          <FiAward size={30} color="#F1C40F" />
+        </button>
+      </div>
+
+      {/* Course Info Box */}
+      <div className="course-info-box">
+        <h4>Course Materials</h4>
+        <div className="info-row">
+          <span className="label">👨‍🏫 Instructor:</span>
+          <span className="value">Edward Norton</span>
+        </div>
+        <div className="info-row">
+          <span className="label">⏳ Duration:</span>
+          <span className="value">3 weeks</span>
+        </div>
+        <div className="info-row">
+          <span className="label">📘 Lessons:</span>
+          <span className="value">8</span>
+        </div>
+        <div className="info-row">
+          <span className="label">👥 Enrolled:</span>
+          <span className="value">65 students</span>
+        </div>
+        <div className="info-row">
+          <span className="label">🌐 Language:</span>
+          <span className="value">English</span>
+        </div>
+      </div>
+
+      {/* Progress and Topics */}
+      <div className="topics-section">
+        <h3>Topics for This Course</h3>
+        <ProgressBarmob percentage={63} />
+      </div>
+    </div>
+  );
+}

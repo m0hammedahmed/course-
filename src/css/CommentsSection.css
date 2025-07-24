@@ -1,0 +1,126 @@
+.comments-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  margin-top: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.comment {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.comment-body h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: #888;
+  margin: 0.25rem 0;
+}
+
+.comment-body p {
+  margin: 0.5rem 0 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.comment-form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-form textarea {
+  resize: vertical;
+  min-height: 120px;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+.comment-form button {
+  align-self: flex-start;
+  background-color: #28a085;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.comment-form button:hover {
+  background-color: #1f8b6c;
+}
+
+/* ============================= */
+/* ✅ Responsive Design */
+/* ============================= */
+
+/* Small screens (phones) */
+@media (max-width: 600px) {
+  .comments-container {
+    padding: 1rem;
+  }
+
+  .comment {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .avatar {
+    margin-bottom: 0.5rem;
+    width: 50px;
+    height: 50px;
+  }
+
+  .comment-form button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .comments-container {
+    padding: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .comment-body p {
+    font-size: 0.95rem;
+  }
+
+  .comment-form textarea {
+    font-size: 0.95rem;
+  }
+}

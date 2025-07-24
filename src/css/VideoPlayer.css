@@ -1,0 +1,138 @@
+/* Main Container */
+.video_big_container {
+  display: flex;
+  
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1500px;
+  gap: 30px;
+  padding: 30px;
+}
+
+/* Video + Icons */
+.video-player-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 60%;
+  max-width: 800px;
+  gap: 20px;
+}
+
+.video-player {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.video-player video {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: flex-start;
+}
+
+.icon-button {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.icon-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.icon-button:active {
+  transform: scale(0.95);
+}
+
+.icon-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Right Content (Text + Progress + Week) */
+.sec_cont {
+  flex: 1 1 35%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.firdev h3 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  color: #222;
+}
+
+.secdev {
+  display: flex;
+  margin-top: -39px;
+  flex-direction: column;
+}
+
+/* Responsive Media Queries */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .video_big_container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-player-container,
+  .sec_cont {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .icons-container {
+    justify-content: center;
+  }
+
+  .firdev h3 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .sec_cont {
+    align-items: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .video-player {
+    aspect-ratio: 16 / 9;
+  }
+
+  .icon-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .firdev h3 {
+    font-size: 22px;
+  }
+}

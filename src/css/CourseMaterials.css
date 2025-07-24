@@ -1,0 +1,94 @@
+.course-materials-wrapper {
+  width: 100%;
+  max-width: 810px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.course-materials-wrapper h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Container for all cards */
+.materials-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Individual card */
+.material-card {
+  background: #fff;
+  padding: 20px 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.04);
+  flex: 1 1 300px;
+  border-radius: 8px;
+  min-width: 260px;
+}
+
+/* Each row inside the card */
+.material-row {
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #555;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+}
+
+.material-row .icon {
+  margin-right: 10px;
+  color: #818080;
+  font-size: 18px;
+}
+
+.material-row strong {
+  margin-left: auto;
+  color: #818080;
+  font-weight: 600;
+}
+
+/* 🌐 Responsive Design */
+@media (max-width: 1024px) {
+  .course-materials-wrapper {
+    padding: 15px;
+  }
+
+  .materials-container {
+    justify-content: center;
+  }
+
+  .material-card {
+    flex: 1 1 100%;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  .course-materials-wrapper h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .material-card {
+    padding: 15px 20px;
+  }
+
+  .material-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .material-row strong {
+    margin-left: 0;
+  }
+}

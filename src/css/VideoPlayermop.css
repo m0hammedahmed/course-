@@ -1,0 +1,179 @@
+.course-wrapper {
+  width: 100%;
+  max-width: 750px;
+  margin: 1rem auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.breadcrumb {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.course-title {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+.video-playerr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  max-width: 700px;
+  aspect-ratio: 16 / 9;
+  background-color: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.social-icons {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin: 14px 0;
+}
+
+.icon {
+  background-color: #fcfcfc;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.course-info-box {
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.03);
+}
+
+.course-info-box h4 {
+  margin-bottom: 14px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.label {
+  color: #333;
+}
+
+.value {
+  font-weight: 600;
+  color: #222;
+}
+
+.topics-section {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.topics-section h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 768px) {
+  .course-wrapper {
+    padding: 1rem;
+  }
+  .video-playerr {
+    max-width: 100%;
+  }
+  .social-icons {
+    width: 100%;
+  }
+}
+/* ✅ Base styles already included */
+
+/* 🎯 Special styles for social/educational icons */
+.icons-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 16px 0;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.icon-button {
+  flex: 1;
+  min-width: 50px;
+  max-width: 70px;
+  background-color: #f0f4f8;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.icon-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 🎨 You can target specific icons if needed */
+.icon-button[title="Book"] {
+  background-color: #e3f2fd;
+}
+
+.icon-button[title="Video Lesson"] {
+  background-color: #fff3e0;
+}
+
+.icon-button[title="PDF Resource"] {
+  background-color: #ffebee;
+}
+
+.icon-button[title="Quiz"] {
+  background-color: #e8f5e9;
+}
+
+.icon-button[title="Certificate"] {
+  background-color: #fffde7;
+}

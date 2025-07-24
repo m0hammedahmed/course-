@@ -1,0 +1,217 @@
+.quiz-wrapper {
+  width: 320px;
+  margin: 1rem auto;
+  background-color: #4c6ef5;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.quiz-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: white;
+}
+
+.timer-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffe24d;
+  box-shadow: #ffe24d 0px 0px 40px;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #000;
+}
+
+.progress-indicators {
+    
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.step {
+    
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: white;
+    background-color: #4c6ef5;
+
+  color: #dad8d8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.active-step {
+  
+    background-color: white;
+
+  color: rgb(0, 0, 0);
+  border: 2px solid #e2e2e4;
+}
+.question-box {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+    padding: 20px;
+
+}
+
+.question-box h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+}
+
+.question-box p {
+  margin: 0.5rem 0 1rem;
+  font-size: 0.95rem;
+  color: rgb(0, 0, 0);
+}
+
+.options {
+  display: flex;
+  
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  background: #f4f4f4;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 2px solid transparent;
+}
+
+.option input {
+  margin-right: 0.75rem;
+  pointer-events: none;
+  position: absolute;
+  opacity: 0;
+}
+
+.custom-check {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #4c6ef5;
+  border-radius: 4px;
+  position: relative;
+  margin-right: 10px;
+}
+
+.option.selected {
+  background-color: #4c6ef5;
+  color: white;
+  
+  border: 2px solid #4c6ef5;
+}
+.option.selected .custom-check {
+  border: 2px solid #e2e3e8;
+}
+
+
+.option.selected .custom-check::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  margin: auto;
+  display: flex;
+    align-items: center;
+    
+    justify-content: center;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.option-text {
+  position: relative;
+  padding-left: 5px;
+  font-weight: 500;
+}
+/* ✅ أضف هذا الكود إلى ملف QuizQuestion.css أو ملف CSS المرتبط بالكويز */
+
+.quiz-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* خلفية شفافة للتركيز */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.quiz-content {
+  background: transparent; /* ✅ إزالة الخلفية البيضاء */
+  border-radius: 12px;
+  max-width: 420px;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-wrapper {
+  background-color: #376bfb; /* الخلفية الزرقاء للكويز */
+  padding: 1.2rem;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  color: white;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 99999;
+}
+
+/* ✅ تعديل عند الضغط */
+.back-button:hover {
+  opacity: 0.8;
+}
+
+/* إخفاء الـ modal عند عدم الحاجة */
+.hidden {
+  display: none !important;
+}
