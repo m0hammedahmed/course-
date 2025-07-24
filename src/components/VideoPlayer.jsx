@@ -20,19 +20,19 @@ export default function VideoPlayer() {
 
         <div className="icons-container">
           <button className="icon-button" title="Book">
-            <FaBookOpen size={30} color="#4A90E2" />
+            <FaBookOpen size={25} color="#4A90E2" />
           </button>
           <button className="icon-button" title="Video Lesson">
-            <AiOutlineVideoCamera size={30} color="#E67E22" />
+            <AiOutlineVideoCamera size={25} color="#E67E22" />
           </button>
           <button className="icon-button" title="PDF Resource">
-            <FaFilePdf size={30} color="#D32F2F" />
+            <FaFilePdf size={25} color="#D32F2F" />
           </button>
           <button className="icon-button" title="Quiz">
-            <AiOutlineFileDone size={30} color="#27AE60" />
+            <AiOutlineFileDone size={25} color="#27AE60" />
           </button>
           <button className="icon-button" title="Certificate">
-            <FiAward size={30} color="#F1C40F" />
+            <FiAward size={25} color="#F1C40F" />
           </button>
         </div>
       </div>
